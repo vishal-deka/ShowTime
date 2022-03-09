@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  background-position: "center";
+  height: 50vh;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.hero-text {
+  align-items: center;
+}
+
+.showContainer {
+  padding: 20px 5px;
+}
+@media only screen and (min-width: 650px) {
+  .showContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .showList {
+    width: 60vw;
+  }
+}
+.showList {
+}
+
+.detailsContainer {
+}
+.details {
+  padding: 20px;
+}
+
+.contents {
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.summary {
+  padding: 10px 5px;
+}
+
+@media only screen and (min-width: 650px) {
+  .details {
+  }
+  .contentsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .contents {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+  }
+  .preview {
+  }
+  .summary {
+    width: 60%;
+  }
+}

@@ -1,6 +1,7 @@
 import ShowCard from "./Card";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useEffect, useState } from "react";
+import "./styles.css";
 
 export default function Shows() {
   //styling the show list
@@ -32,12 +33,14 @@ export default function Shows() {
   }, []);
 
   return (
-    <div style={style} className="showlist">
-      <h2>Available shows:</h2>
-      <br />
-      {data.map((show) => (
-        <ShowCard show={show} />
-      ))}
+    <div className="showContainer">
+      <div className="showList">
+        <h2>Available shows:</h2>
+        <br />
+        {data.map((show) => (
+          <ShowCard show={show} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import img from "../assets/bg.jpg";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import "./styles.css";
 
 export default function Hero() {
   const isDesktop = useMediaQuery("(min-width:600px)");
@@ -20,17 +21,14 @@ export default function Hero() {
   }
 
   return (
-    <div className="container" style={{ marginBottom: "5px" }}>
+    <div className="container">
       <div
         className="hero-image"
         style={{
-          backgroundImage: `url(${img})`,
-          backgroundPosition: "center",
-          height: "50vh",
-          top: "0"
+          backgroundImage: `url(${img})`
         }}
       >
-        <div className="hero-text" style={textStyle}>
+        <div className="hero-text">
           <h1 style={headstyle}>Its ShowTime!</h1>
           <p style={{ textAlign: "center", color: "white" }}>
             Find below the trending shows
